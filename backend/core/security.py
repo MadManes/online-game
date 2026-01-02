@@ -1,12 +1,12 @@
 # backend/core/security.py
-
+import os
 from datetime import datetime, timedelta, timezone
 from jose import jwt, JWTError
 from passlib.context import CryptContext
 from fastapi import HTTPException, status
 
-SECRET_KEY = "197b23cc4454b13a534916ae334d3179c89109a09687178e87687c87aa89fe3"
-ALGORITHM = "HS256"
+SECRET_KEY = os.getenv("SECRET_KEY")
+ALGORITHM = os.getenv("ALGORITHM")
 
 bcrypt_context = CryptContext(
     schemes=["bcrypt"],
