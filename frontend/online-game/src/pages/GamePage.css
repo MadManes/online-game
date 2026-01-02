@@ -1,0 +1,37 @@
+.game {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  grid-template-rows: 1fr 200px;
+  grid-template-areas:
+    "canvas users"
+    "chat chat";
+  gap: 4px;
+  padding: 4px;
+  overflow: hidden;
+}
+
+.canvas {
+  grid-area: canvas;
+  background: black;
+  color: lime;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.users {
+  grid-area: users;
+  background: #333;
+  color: white;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.chat {
+  grid-area: chat;
+  background: #111;
+  color: white;
+  padding: 0.5rem;
+  overflow: hidden;
+}

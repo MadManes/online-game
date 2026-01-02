@@ -1,0 +1,4 @@
+ Ejecutar para venv:
+ & C:/Martin/PROGRAMACION/FullStack/Full_1/full_1env/Scripts/Activate.ps1
+
+ Usar requirements.txt para otro proyecto similar
